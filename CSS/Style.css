@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  --background-color: #fafcff;
+  --dark: #333;
+  --dark-two: black;
+}
+
+/*General Style*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  z-index: 5;
+  max-width: 70rem;
+  margin: 3rem auto;
+}
+
+.column-1 {
+  margin-right: 1.5rem;
+}
+
+.column-2 {
+  margin-left: 1.5rem;
+}
+
+/*End General Style*/
+
+/* HEADER*/
+header {
+  width: 100%;
+  background: var(--background-color);
+  overflow: hidden;
+}
+
+nav {
+  width: 100%;
+  position: relative;
+  z-index: 50;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+}
+
+.title-header {
+  width: 153px;
+  height: 47;
+}
+
+.title-header h1 {
+  font-size: 20px;
+  color: var(--dark);
+}
+
+.title-header h4 {
+  font-size: 15px;
+  color: var(--dark);
+  font-weight: 400;
+  width: 64px;
+  margin: 0 auto;
+}
+
+.links ul {
+  display: flex;
+}
+.links li {
+  padding: 1.2rem;
+}
+
+.links a {
+  position: relative;
+  font-size: 15px;
+  font-weight: 380;
+  color: var(--dark);
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+.Soclinks ul {
+  display: flex;
+}
+
+.Soclinks a {
+  display: inline-block;
+  padding: 3px;
+  line-height: 1;
+  margin: 0.5rem;
+}
+
+.Soclinks img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+.links a::after {
+  content: "";
+  display: block;
+  background: var(--dark);
+  width: 0;
+  height: 1px;
+  margin: auto;
+}
+
+.links a:hover::after {
+  width: 100%;
+  transition: 0.3s linear;
+}
+
+.header-content .container.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 6rem);
+  padding-bottom: 2.5rem;
+  text-align: left;
+}
+
+.header-title1 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.header-title2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 1.5rem 0;
+}
+
+.bttn-1 {
+  font-size: 15px;
+  font-weight: 500;
+  display: inline-block;
+  padding: 0.85rem 1rem;
+  background-color: var(--dark-two);
+  color: var(--background-color);
+  margin-right: 1.5rem;
+  border-radius: 9px;
+}
+
+.bttn-2 {
+  font-size: 15px;
+  font-weight: 500;
+  display: inline-block;
+  padding: 0.85rem 3rem;
+  background-color: var(--dark-two);
+  color: var(--background-color);
+  border-radius: 9px;
+}
+
+.image {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+}
+
+.header-content img {
+  max-width: 750px;
+  width: 496px;
+  height: 503px;
+  border-radius: 189px;
+}
+/*End HEADER */
