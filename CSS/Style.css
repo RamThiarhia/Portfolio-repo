@@ -142,46 +142,65 @@ nav .container {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
-  min-height: calc(100vh - 6rem);
+  min-height: calc(100vh - 8rem);
   padding-bottom: 2.5rem;
   text-align: left;
 }
 
 .header-title1 {
-  font-size: 45px;
-  font-weight: 700;
+  font-size: 2.25rem;
+  font-weight: 900;
 }
 
 .header-title2 {
-  font-size: 18px;
+  font-size: 1.3rem;
   font-weight: 500;
 }
 
 .text {
-  font-size: 16px;
+  font-size: 1.1rem;
   font-weight: 400;
   margin: 1.5rem 0;
+  color: var(--dark);
 }
 
-.bttn-1 {
+.button {
+  display: flex;
+  align-items: center;
+  float: left;
+}
+
+.bttn-1 a {
+  float: left;
   font-size: 15px;
-  font-weight: 500;
-  display: inline-block;
-  padding: 0.85rem 1rem;
+  padding: 0.75rem 1rem;
   background-color: var(--dark-two);
   color: var(--background-color);
-  margin-right: 1.5rem;
+  margin-right: 1.2rem;
   border-radius: 9px;
 }
 
-.bttn-2 {
+.bttn-2 a {
+  display: flex;
+  align-items: center;
+  float: left;
   font-size: 15px;
-  font-weight: 500;
-  display: inline-block;
-  padding: 0.85rem 3rem;
+  padding: 0.6rem 1.5rem;
   background-color: var(--dark-two);
   color: var(--background-color);
   border-radius: 9px;
+}
+
+.bttn-2 a img {
+  float: left;
+  margin-right: 8.5px;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+}
+
+.bttn-2 a span {
+  float: left;
 }
 
 .image {
@@ -196,4 +215,5 @@ nav .container {
   height: 503px;
   border-radius: 189px;
 }
+
 /*End HEADER */
